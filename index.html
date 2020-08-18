@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulaire Interactif</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+
+        </div>
+        <div class="form-container">
+            <form class="form-container__form">
+                <label>Votre sexe :
+                    <input type="radio" id="rad-masc" value="masculin" name="sexe" checked><label for="rad-masc">masculin</label>
+                    <input type="radio" id="rad-fem " value="feminin" name="sexe"><label for="rad-fem">feminin</label>
+                </label><br><br>
+                <label class="lastName">Votre Nom :
+                    <input type="text" id="lastName" value="Nom" required>
+                </label><br><br>
+                <label class="firstName">Votre Prénom :
+                    <input type="text" id="firstName" value="Prénom" required>
+                </label><br><br>
+                <label class="age">Votre age :
+                    <input type="text" id="age" value="Age" required>
+                </label><br><br>
+                <label class="pseudo">Votre pseudo :
+                    <input type="text" id="pseudo" value="pseudo" required>
+                </label><br><br>
+                <label class="password">Votre Password :
+                    <input type="password" id="password" value="password" required>
+                </label><br><br>
+                <label class="password-conf">Votre Password (cofirmation) :
+                    <input type="password" id="password-conf" value="password" required>
+                </label><br><br>
+
+            </form>
+        </div>
+        <div class="footer">
+
+
+        </div>
+    </div>
+
+    <script src="./Java/java.js" async defer></script>
+</body>
+
+</html>
