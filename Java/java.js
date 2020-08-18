@@ -22,9 +22,18 @@ function getToolTip(element) {
 // checking the form
 let check = {}; //an literal object
 
-check["sex"] = function() {
+check["sexe"] = function() {
 
+    let sexe = document.getElementsByName("sexe");
+    let tootipStyle = getToolTip(sexe[1].parentNode).style;
 
+    if(sexe[0].checked || sexe[1].checked) {
+        tootipStyle.display = "non";
+        return true;
+    } else {
+        tootipStyle.display = "inline-block";
+        return false;
+    }
     
 };
 
