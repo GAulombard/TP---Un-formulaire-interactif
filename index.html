@@ -18,33 +18,56 @@
 <body>
     <div class="main-container">
         <div class="header">
-
+            <h1>Inscription</h1>
         </div>
         <div class="form-container">
             <form class="form-container__form">
                 <label>Votre sexe :
-                    <input type="radio" id="rad-masc" value="masculin" name="sexe" checked><label for="rad-masc">masculin</label>
+                    <input type="radio" id="rad-masc" value="masculin" name="sexe"><label for="rad-masc">masculin</label>
                     <input type="radio" id="rad-fem " value="feminin" name="sexe"><label for="rad-fem">feminin</label>
+                    <span class="tooltip">Vous devez selectionner votre sexe.</span>
                 </label><br><br>
                 <label class="lastName">Votre Nom :
-                    <input type="text" id="lastName" value="Nom" required>
+                    <input type="text" id="lastName" required>
+                    <span class="tooltip">Votre Nom doit comporter au moins 2 caractères</span>
                 </label><br><br>
                 <label class="firstName">Votre Prénom :
-                    <input type="text" id="firstName" value="Prénom" required>
+                    <input type="text" id="firstName" required>
+                    <span class="tooltip">Votre Prénom doit comporter au moins 2 caractères</span>
                 </label><br><br>
                 <label class="age">Votre age :
-                    <input type="text" id="age" value="Age" required>
+                    <input type="text" id="age" required>
+                    <span class="tooltip">Votre age doit être un nombre compris entre 5 et 140</span>
                 </label><br><br>
                 <label class="pseudo">Votre pseudo :
-                    <input type="text" id="pseudo" value="pseudo" required>
+                    <input type="text" id="pseudo" required>
+                    <span class="tooltip">Votre Pseudo doit contenir au moins 4 caractères</span>
                 </label><br><br>
                 <label class="password">Votre Password :
-                    <input type="password" id="password" value="password" required>
+                    <input type="password" id="password" required>
+                    <span class="tooltip">Votre Password doit contenir au moins 6 caractères</span>
                 </label><br><br>
                 <label class="password-conf">Votre Password (cofirmation) :
-                    <input type="password" id="password-conf" value="password" required>
+                    <input type="password" id="password-conf" required>
+                    <span class="tooltip">Les deux passwords doivent être identiques</span>
                 </label><br><br>
-
+                <label for="country-select">Votre Pays : 
+                    <select name="country-select" id="country-select" required>
+                        <option value="">-- Choisissez un pays --</option>
+                        <option value="france">France</option>
+                        <option value="croatie">Croatie</option>
+                        <option value="angleterre">Angleterre</option>
+                        <option value="pays-bas">Pays-Bas</option>
+                        <option value="allemagne">Allemagne</option>
+                        <option value="espagne">Espagne</option>
+                        <option value="italie">Italie</option>
+                        <option value="belgique">Belgique</option>
+                    </select>
+                    <span class="tooltip">Vous devez sélectionner votre pays de résidence</span>
+                </label><br><br>
+                <label><input type="checkbox" id="news">Je désire recevoir la newsletter
+                </label><br><br>
+                <input type="submit" value="M'inscrire"><input type="reset" value="Réinitialiser le formulaire">
             </form>
         </div>
         <div class="footer">
